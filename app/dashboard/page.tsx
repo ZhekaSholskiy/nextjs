@@ -4,8 +4,8 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import {fetchCardData, fetchLatestInvoices, fetchRevenue} from "@/app/lib/data";
 
-async function wait(seconds) {
-    return new Promise((r) => setTimeout(() => r(), seconds));
+async function wait(seconds: number) {
+    return new Promise((r) => setTimeout(() => r(1), seconds));
 }
 
 export default async function Page() {
